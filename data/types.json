@@ -1,0 +1,1559 @@
+[
+  {
+    "func": "randAbbreviation",
+    "name": "abbreviation",
+    "properties": {}
+  },
+  {
+    "func": "randAbn",
+    "name": "abn",
+    "properties": {
+      "onlyValid": "boolean"
+    }
+  },
+  {
+    "func": "randAccessory",
+    "name": "accessory",
+    "properties": {}
+  },
+  {
+    "func": "randAccount",
+    "name": "account",
+    "properties": {
+      "accountLength": "number"
+    }
+  },
+  {
+    "func": "randAddress",
+    "name": "address",
+    "properties": {
+      "includeCounty": "boolean",
+      "includeCountry": "boolean"
+    }
+  },
+  {
+    "func": "randAggregation",
+    "name": "aggregation",
+    "properties": {
+      "totalValue": "number",
+      "noZeros": "boolean",
+      "min": "number",
+      "max": "number",
+      "fraction": "number",
+      "values": "T"
+    }
+  },
+  {
+    "func": "randAirline",
+    "name": "airline",
+    "properties": {}
+  },
+  {
+    "func": "randAirportCode",
+    "name": "airport_code",
+    "properties": {}
+  },
+  {
+    "func": "randAirportName",
+    "name": "airport_name",
+    "properties": {}
+  },
+  {
+    "func": "randAirport",
+    "name": "airport",
+    "properties": {}
+  },
+  {
+    "func": "randAlphaNumeric",
+    "name": "alpha_numeric",
+    "properties": {}
+  },
+  {
+    "func": "randAlpha",
+    "name": "alpha",
+    "properties": {}
+  },
+  {
+    "func": "randAmericanFootballTeam",
+    "name": "american_football_team",
+    "properties": {}
+  },
+  {
+    "func": "randAmount",
+    "name": "amount",
+    "properties": {
+      "symbol": "string",
+      "min": "number",
+      "max": "number",
+      "fraction": "number"
+    }
+  },
+  {
+    "func": "randAmount",
+    "name": "amount",
+    "properties": {
+      "symbol": "string",
+      "min": "number",
+      "max": "number",
+      "fraction": "number"
+    }
+  },
+  {
+    "func": "randAnimalType",
+    "name": "animal_type",
+    "properties": {}
+  },
+  {
+    "func": "randArn",
+    "name": "arn",
+    "properties": {}
+  },
+  {
+    "func": "randAvatar",
+    "name": "avatar",
+    "properties": {
+      "size": "number"
+    }
+  },
+  {
+    "func": "randAwsRegion",
+    "name": "aws_region",
+    "properties": {}
+  },
+  {
+    "func": "randAwsRequestId",
+    "name": "aws_request_id",
+    "properties": {}
+  },
+  {
+    "func": "randAwsService",
+    "name": "aws_service",
+    "properties": {}
+  },
+  {
+    "func": "randBaseballTeam",
+    "name": "baseball_team",
+    "properties": {}
+  },
+  {
+    "func": "randBasketballTeam",
+    "name": "basketball_team",
+    "properties": {}
+  },
+  {
+    "func": "randBear",
+    "name": "bear",
+    "properties": {}
+  },
+  {
+    "func": "randBetweenDate",
+    "name": "between_date",
+    "properties": {
+      "from": [
+        "trin",
+        "at"
+      ],
+      "to": [
+        "trin",
+        "at"
+      ]
+    }
+  },
+  {
+    "func": "randBic",
+    "name": "bic",
+    "properties": {
+      "bankCode": "string",
+      "countryCode": "string",
+      "locationCode": "string",
+      "branchCode": "string",
+      "fillBranchCode": "boolean"
+    }
+  },
+  {
+    "func": "randBinary",
+    "name": "binary",
+    "properties": {}
+  },
+  {
+    "func": "randBird",
+    "name": "bird",
+    "properties": {}
+  },
+  {
+    "func": "randBitcoinAddress",
+    "name": "bitcoin_address",
+    "properties": {}
+  },
+  {
+    "func": "randBook",
+    "name": "book",
+    "properties": {
+      "category": [
+        "Comedy",
+        "Crime",
+        "Family and Self",
+        "Love",
+        "Science Fiction and Fantasy",
+        "State of the Nation",
+        "War and Travel"
+      ]
+    }
+  },
+  {
+    "func": "randBoolean",
+    "name": "boolean",
+    "properties": {}
+  },
+  {
+    "func": "randBrand",
+    "name": "brand",
+    "properties": {}
+  },
+  {
+    "func": "randBrowser",
+    "name": "browser",
+    "properties": {}
+  },
+  {
+    "func": "randCardinalDirection",
+    "name": "cardinal_direction",
+    "properties": {}
+  },
+  {
+    "func": "randCat",
+    "name": "cat",
+    "properties": {}
+  },
+  {
+    "func": "randCatchPhrase",
+    "name": "catch_phrase",
+    "properties": {}
+  },
+  {
+    "func": "randCetacean",
+    "name": "cetacean",
+    "properties": {}
+  },
+  {
+    "func": "randCity",
+    "name": "city",
+    "properties": {}
+  },
+  {
+    "func": "randClothingSize",
+    "name": "clothing_size",
+    "properties": {}
+  },
+  {
+    "func": "randCodeSnippet",
+    "name": "code_snippet",
+    "properties": {
+      "lang": [
+        "bash",
+        "c",
+        "c#",
+        "c++",
+        "go",
+        "html",
+        "java",
+        "javascript",
+        "php",
+        "python",
+        "rust",
+        "sql",
+        "swift"
+      ]
+    }
+  },
+  {
+    "func": "toCollection",
+    "name": "to_collection",
+    "properties": {}
+  },
+  {
+    "func": "randColor",
+    "name": "color",
+    "properties": {}
+  },
+  {
+    "func": "randCompanyName",
+    "name": "company_name",
+    "properties": {}
+  },
+  {
+    "func": "randCountryCode",
+    "name": "country_code",
+    "properties": {}
+  },
+  {
+    "func": "randCountry",
+    "name": "country",
+    "properties": {}
+  },
+  {
+    "func": "randCounty",
+    "name": "county",
+    "properties": {}
+  },
+  {
+    "func": "randCow",
+    "name": "cow",
+    "properties": {}
+  },
+  {
+    "func": "randCreditCardBrand",
+    "name": "credit_card_brand",
+    "properties": {}
+  },
+  {
+    "func": "randCreditCardCVV",
+    "name": "credit_card_cvv",
+    "properties": {}
+  },
+  {
+    "func": "randCreditCardNumber",
+    "name": "credit_card_number",
+    "properties": {
+      "brand": [
+        "American Express",
+        "UnionPay",
+        "Diners Club",
+        "Discover Card",
+        "RuPay",
+        "JCB",
+        "Maestro",
+        "Dankort",
+        "Mastercard",
+        "Visa",
+        "Visa Electron",
+        "UATP"
+      ]
+    }
+  },
+  {
+    "func": "randCreditCard",
+    "name": "credit_card",
+    "properties": {
+      "fullName": "string",
+      "brand": [
+        "American Express",
+        "UnionPay",
+        "Diners Club",
+        "Discover Card",
+        "RuPay",
+        "JCB",
+        "Maestro",
+        "Dankort",
+        "Mastercard",
+        "Visa",
+        "Visa Electron",
+        "UATP"
+      ]
+    }
+  },
+  {
+    "func": "randCrocodilia",
+    "name": "crocodilia",
+    "properties": {}
+  },
+  {
+    "func": "randCurrencyCode",
+    "name": "currency_code",
+    "properties": {}
+  },
+  {
+    "func": "randCurrencyName",
+    "name": "currency_name",
+    "properties": {}
+  },
+  {
+    "func": "randCurrencySymbol",
+    "name": "currency_symbol",
+    "properties": {}
+  },
+  {
+    "func": "randDatabaseCollation",
+    "name": "database_collation",
+    "properties": {}
+  },
+  {
+    "func": "randDatabaseColumn",
+    "name": "database_column",
+    "properties": {}
+  },
+  {
+    "func": "randDatabaseEngine",
+    "name": "database_engine",
+    "properties": {}
+  },
+  {
+    "func": "randDatabaseType",
+    "name": "database_type",
+    "properties": {}
+  },
+  {
+    "func": "randDatabase",
+    "name": "database",
+    "properties": {}
+  },
+  {
+    "func": "randDepartment",
+    "name": "department",
+    "properties": {}
+  },
+  {
+    "func": "randDirection",
+    "name": "direction",
+    "properties": {}
+  },
+  {
+    "func": "randDirectoryPath",
+    "name": "directory_path",
+    "properties": {}
+  },
+  {
+    "func": "randDog",
+    "name": "dog",
+    "properties": {}
+  },
+  {
+    "func": "randDomainName",
+    "name": "domain_name",
+    "properties": {}
+  },
+  {
+    "func": "randDomainSuffix",
+    "name": "domain_suffix",
+    "properties": {}
+  },
+  {
+    "func": "randDrinks",
+    "name": "drinks",
+    "properties": {}
+  },
+  {
+    "func": "randEmailProvider",
+    "name": "email_provider",
+    "properties": {}
+  },
+  {
+    "func": "randEmail",
+    "name": "email",
+    "properties": {
+      "firstName": "string",
+      "lastName": "string",
+      "provider": "string",
+      "suffix": "string",
+      "nameSeparator": [
+        ".",
+        "-",
+        "_",
+        "+",
+        "none"
+      ]
+    }
+  },
+  {
+    "func": "randEmoji",
+    "name": "emoji",
+    "properties": {}
+  },
+  {
+    "func": "randEthereumAddress",
+    "name": "ethereum_address",
+    "properties": {}
+  },
+  {
+    "func": "randFileExt",
+    "name": "file_ext",
+    "properties": {}
+  },
+  {
+    "func": "randFileName",
+    "name": "file_name",
+    "properties": {
+      "extension": "string"
+    }
+  },
+  {
+    "func": "randFilePath",
+    "name": "file_path",
+    "properties": {}
+  },
+  {
+    "func": "randFileType",
+    "name": "file_type",
+    "properties": {}
+  },
+  {
+    "func": "randFirstName",
+    "name": "first_name",
+    "properties": {
+      "withAccents": "boolean",
+      "gender": [
+        "male",
+        "female"
+      ]
+    }
+  },
+  {
+    "func": "randFish",
+    "name": "fish",
+    "properties": {}
+  },
+  {
+    "func": "randFlightDetails",
+    "name": "flight_details",
+    "properties": {
+      "airline": [
+        "RyanAir",
+        "British Airways",
+        "Iberia",
+        "EasyJet",
+        "Jet2",
+        "Emirates",
+        "American Airlines",
+        "JetBlue",
+        "Air Europa",
+        "Delta Air Lines",
+        "United Airlines",
+        "Thai Airways",
+        "Qatar Airways",
+        "Virgin Atlantic"
+      ],
+      "passenger": "string"
+    }
+  },
+  {
+    "func": "randFlightNumber",
+    "name": "flight_number",
+    "properties": {
+      "airline": [
+        "RyanAir",
+        "British Airways",
+        "Iberia",
+        "EasyJet",
+        "Jet2",
+        "Emirates",
+        "American Airlines",
+        "JetBlue",
+        "Air Europa",
+        "Delta Air Lines",
+        "United Airlines",
+        "Thai Airways",
+        "Qatar Airways",
+        "Virgin Atlantic"
+      ]
+    }
+  },
+  {
+    "func": "randFloat",
+    "name": "float",
+    "properties": {
+      "min": "number",
+      "max": "number",
+      "fraction": "number"
+    }
+  },
+  {
+    "func": "randFontFamily",
+    "name": "font_family",
+    "properties": {}
+  },
+  {
+    "func": "randFontSize",
+    "name": "font_size",
+    "properties": {
+      "suffix": [
+        "px",
+        "cm",
+        "em",
+        "rem",
+        "vw",
+        "vh",
+        "vmin",
+        "vmax",
+        "%"
+      ]
+    }
+  },
+  {
+    "func": "randFood",
+    "name": "food",
+    "properties": {
+      "origin": [
+        "china",
+        "italy",
+        "india",
+        "mexico",
+        "japan",
+        "france",
+        "lebanon",
+        "thailand",
+        "greece",
+        "turkey",
+        "spain",
+        "venezuela",
+        "chile",
+        "argentina",
+        "colombia",
+        "ecuador",
+        "peru",
+        "el salvador",
+        "romania"
+      ]
+    }
+  },
+  {
+    "func": "randFootballTeam",
+    "name": "football_team",
+    "properties": {}
+  },
+  {
+    "func": "randFrequency",
+    "name": "frequency",
+    "properties": {}
+  },
+  {
+    "func": "randFullAddress",
+    "name": "full_address",
+    "properties": {
+      "includeCounty": "boolean",
+      "includeCountry": "boolean"
+    }
+  },
+  {
+    "func": "randFullName",
+    "name": "full_name",
+    "properties": {
+      "withAccents": "boolean",
+      "gender": [
+        "male",
+        "female"
+      ]
+    }
+  },
+  {
+    "func": "randFutureDate",
+    "name": "future_date",
+    "properties": {
+      "years": "number"
+    }
+  },
+  {
+    "func": "randGender",
+    "name": "gender",
+    "properties": {
+      "code": "boolean"
+    }
+  },
+  {
+    "func": "randGitBranch",
+    "name": "git_branch",
+    "properties": {}
+  },
+  {
+    "func": "randGitCommitEntry",
+    "name": "git_commit_entry",
+    "properties": {}
+  },
+  {
+    "func": "randGitCommitMessage",
+    "name": "git_commit_message",
+    "properties": {}
+  },
+  {
+    "func": "randGitCommitSha",
+    "name": "git_commit_sha",
+    "properties": {}
+  },
+  {
+    "func": "randGitShortSha",
+    "name": "git_short_sha",
+    "properties": {}
+  },
+  {
+    "func": "randHex",
+    "name": "hex",
+    "properties": {}
+  },
+  {
+    "func": "randHexaDecimal",
+    "name": "hexa_decimal",
+    "properties": {}
+  },
+  {
+    "func": "randHorse",
+    "name": "horse",
+    "properties": {}
+  },
+  {
+    "func": "randHsl",
+    "name": "hsl",
+    "properties": {
+      "alpha": "boolean"
+    }
+  },
+  {
+    "func": "randHttpMethod",
+    "name": "http_method",
+    "properties": {}
+  },
+  {
+    "func": "randIban",
+    "name": "iban",
+    "properties": {
+      "countryCode": "string"
+    }
+  },
+  {
+    "func": "randIceHockeyTeam",
+    "name": "ice_hockey_team",
+    "properties": {}
+  },
+  {
+    "func": "randImg",
+    "name": "img",
+    "properties": {
+      "width": "number",
+      "height": "number",
+      "category": [
+        "animals",
+        "arch",
+        "nature",
+        "people",
+        "tech"
+      ]
+    }
+  },
+  {
+    "func": "randIntegration",
+    "name": "integration",
+    "properties": {}
+  },
+  {
+    "func": "randIp",
+    "name": "ip",
+    "properties": {}
+  },
+  {
+    "func": "randIpv6",
+    "name": "ipv6",
+    "properties": {}
+  },
+  {
+    "func": "randJobArea",
+    "name": "job_area",
+    "properties": {}
+  },
+  {
+    "func": "randJobDescriptor",
+    "name": "job_descriptor",
+    "properties": {}
+  },
+  {
+    "func": "randJobTitle",
+    "name": "job_title",
+    "properties": {}
+  },
+  {
+    "func": "randJobType",
+    "name": "job_type",
+    "properties": {}
+  },
+  {
+    "func": "randJSON",
+    "name": "json",
+    "properties": {
+      "totalKeys": "number",
+      "minKeys": "number",
+      "maxKeys": "number"
+    }
+  },
+  {
+    "func": "randLanguage",
+    "name": "language",
+    "properties": {
+      "code": "boolean"
+    }
+  },
+  {
+    "func": "randLastName",
+    "name": "last_name",
+    "properties": {
+      "withAccents": "boolean",
+      "gender": [
+        "male",
+        "female"
+      ]
+    }
+  },
+  {
+    "func": "randLatitude",
+    "name": "latitude",
+    "properties": {}
+  },
+  {
+    "func": "randLine",
+    "name": "line",
+    "properties": {
+      "lineCount": "number"
+    }
+  },
+  {
+    "func": "randLines",
+    "name": "lines",
+    "properties": {}
+  },
+  {
+    "func": "randLion",
+    "name": "lion",
+    "properties": {}
+  },
+  {
+    "func": "randLocale",
+    "name": "locale",
+    "properties": {}
+  },
+  {
+    "func": "randLongitude",
+    "name": "longitude",
+    "properties": {}
+  },
+  {
+    "func": "randMac",
+    "name": "mac",
+    "properties": {}
+  },
+  {
+    "func": "randMask",
+    "name": "mask",
+    "properties": {
+      "mask": "string",
+      "char": "string",
+      "digit": "string"
+    }
+  },
+  {
+    "func": "randMimeType",
+    "name": "mime_type",
+    "properties": {}
+  },
+  {
+    "func": "randMonth",
+    "name": "month",
+    "properties": {
+      "abbreviation": "boolean"
+    }
+  },
+  {
+    "func": "randMotorcylceManufacturer",
+    "name": "motorcylce_manufacturer",
+    "properties": {}
+  },
+  {
+    "func": "randMovieCharacter",
+    "name": "movie_character",
+    "properties": {}
+  },
+  {
+    "func": "randMovie",
+    "name": "movie",
+    "properties": {}
+  },
+  {
+    "func": "randMusicGenre",
+    "name": "music_genre",
+    "properties": {}
+  },
+  {
+    "func": "randNearbyGPSCoordinate",
+    "name": "nearby_gps_coordinate",
+    "properties": {}
+  },
+  {
+    "func": "randNumber",
+    "name": "number",
+    "properties": {
+      "precision": "number",
+      "min": "number",
+      "max": "number",
+      "fraction": "number"
+    }
+  },
+  {
+    "func": "randOAuthProvider",
+    "name": "o_auth_provider",
+    "properties": {}
+  },
+  {
+    "func": "randOctal",
+    "name": "octal",
+    "properties": {}
+  },
+  {
+    "func": "randOrdinalDirection",
+    "name": "ordinal_direction",
+    "properties": {}
+  },
+  {
+    "func": "randParagraph",
+    "name": "paragraph",
+    "properties": {}
+  },
+  {
+    "func": "randPassword",
+    "name": "password",
+    "properties": {
+      "size": "number"
+    }
+  },
+  {
+    "func": "randPastDate",
+    "name": "past_date",
+    "properties": {
+      "years": "number"
+    }
+  },
+  {
+    "func": "randPermission",
+    "name": "permission",
+    "properties": {
+      "numeric": "boolean"
+    }
+  },
+  {
+    "func": "randPersonTitle",
+    "name": "person_title",
+    "properties": {}
+  },
+  {
+    "func": "randPhoneNumber",
+    "name": "phone_number",
+    "properties": {
+      "countryCode": [
+        "AC",
+        "AD",
+        "AE",
+        "AF",
+        "AG",
+        "AI",
+        "AL",
+        "AM",
+        "AN",
+        "AO",
+        "AQ",
+        "AR",
+        "AS",
+        "AT",
+        "AU",
+        "AW",
+        "AZ",
+        "BA",
+        "BB",
+        "BD",
+        "BE",
+        "BF",
+        "BG",
+        "BH",
+        "BI",
+        "BJ",
+        "BM",
+        "BN",
+        "BO",
+        "BR",
+        "BS",
+        "BT",
+        "BW",
+        "BY",
+        "BZ",
+        "CD",
+        "CF",
+        "CG",
+        "CH",
+        "CI",
+        "CK",
+        "CL",
+        "CM",
+        "CN",
+        "CO",
+        "CR",
+        "CU",
+        "CV",
+        "CW",
+        "CY",
+        "CZ",
+        "DE",
+        "DJ",
+        "DK",
+        "DM",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ER",
+        "ES",
+        "ET",
+        "FI",
+        "FJ",
+        "FK",
+        "FM",
+        "FO",
+        "FR",
+        "GA",
+        "GD",
+        "GE",
+        "GF",
+        "GH",
+        "GI",
+        "GL",
+        "GM",
+        "GN",
+        "GQ",
+        "GR",
+        "GT",
+        "GU",
+        "GW",
+        "GY",
+        "HK",
+        "HN",
+        "HR",
+        "HT",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IO",
+        "IQ",
+        "IR",
+        "IS",
+        "IT",
+        "JM",
+        "JO",
+        "JP",
+        "KE",
+        "KG",
+        "KH",
+        "KI",
+        "KM",
+        "KN",
+        "KP",
+        "KR",
+        "KW",
+        "KY",
+        "KZ",
+        "LA",
+        "LB",
+        "LC",
+        "LI",
+        "LK",
+        "LR",
+        "LS",
+        "LT",
+        "LU",
+        "LV",
+        "LY",
+        "MA",
+        "MC",
+        "MD",
+        "ME",
+        "MG",
+        "MH",
+        "MK",
+        "ML",
+        "MM",
+        "MN",
+        "MO",
+        "MP",
+        "MQ",
+        "MR",
+        "MS",
+        "MT",
+        "MU",
+        "MV",
+        "MW",
+        "MX",
+        "MY",
+        "MZ",
+        "NA",
+        "NC",
+        "NE",
+        "NF",
+        "NG",
+        "NI",
+        "NL",
+        "NO",
+        "NP",
+        "NR",
+        "NU",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PF",
+        "PG",
+        "PH",
+        "PK",
+        "PL",
+        "PS",
+        "PT",
+        "PW",
+        "PY",
+        "QA",
+        "RE",
+        "RO",
+        "RS",
+        "RU",
+        "RW",
+        "SA",
+        "SB",
+        "SC",
+        "SD",
+        "SE",
+        "SG",
+        "SH",
+        "SI",
+        "SK",
+        "SL",
+        "SM",
+        "SN",
+        "SO",
+        "SR",
+        "SS",
+        "ST",
+        "SV",
+        "SX",
+        "SY",
+        "SZ",
+        "TC",
+        "TD",
+        "TG",
+        "TH",
+        "TJ",
+        "TK",
+        "TL",
+        "TM",
+        "TN",
+        "TO",
+        "TR",
+        "TT",
+        "TV",
+        "TW",
+        "TZ",
+        "UA",
+        "UG",
+        "GB",
+        "UY",
+        "UZ",
+        "VA",
+        "VC",
+        "VE",
+        "VG",
+        "VI",
+        "VN",
+        "VU",
+        "WF",
+        "WS",
+        "YE",
+        "ZA",
+        "ZM",
+        "ZW",
+        "US",
+        "CA",
+        "UK"
+      ]
+    }
+  },
+  {
+    "func": "randPhrase",
+    "name": "phrase",
+    "properties": {}
+  },
+  {
+    "func": "randPort",
+    "name": "port",
+    "properties": {}
+  },
+  {
+    "func": "randPost",
+    "name": "post",
+    "properties": {}
+  },
+  {
+    "func": "randPriority",
+    "name": "priority",
+    "properties": {}
+  },
+  {
+    "func": "randProductAdjective",
+    "name": "product_adjective",
+    "properties": {}
+  },
+  {
+    "func": "randProductCategory",
+    "name": "product_category",
+    "properties": {}
+  },
+  {
+    "func": "randProductDescription",
+    "name": "product_description",
+    "properties": {}
+  },
+  {
+    "func": "randProductMaterial",
+    "name": "product_material",
+    "properties": {}
+  },
+  {
+    "func": "randProductName",
+    "name": "product_name",
+    "properties": {}
+  },
+  {
+    "func": "randProduct",
+    "name": "product",
+    "properties": {}
+  },
+  {
+    "func": "randProgrammingLanguage",
+    "name": "programming_language",
+    "properties": {}
+  },
+  {
+    "func": "randPronoun",
+    "name": "pronoun",
+    "properties": {}
+  },
+  {
+    "func": "randProtocol",
+    "name": "protocol",
+    "properties": {
+      "fullName": "boolean"
+    }
+  },
+  {
+    "func": "randQuote",
+    "name": "quote",
+    "properties": {}
+  },
+  {
+    "func": "randRabbit",
+    "name": "rabbit",
+    "properties": {}
+  },
+  {
+    "func": "rand",
+    "name": "rand",
+    "properties": {}
+  },
+  {
+    "func": "random",
+    "name": "random",
+    "properties": {}
+  },
+  {
+    "func": "seed",
+    "name": "seed",
+    "properties": {}
+  },
+  {
+    "func": "randRecentDate",
+    "name": "recent_date",
+    "properties": {
+      "days": "number"
+    }
+  },
+  {
+    "func": "randRgb",
+    "name": "rgb",
+    "properties": {
+      "alpha": "boolean"
+    }
+  },
+  {
+    "func": "randRole",
+    "name": "role",
+    "properties": {}
+  },
+  {
+    "func": "randRoutingNumber",
+    "name": "routing_number",
+    "properties": {}
+  },
+  {
+    "func": "randSeatNumber",
+    "name": "seat_number",
+    "properties": {}
+  },
+  {
+    "func": "randSemver",
+    "name": "semver",
+    "properties": {
+      "prefix": "string"
+    }
+  },
+  {
+    "func": "randSentence",
+    "name": "sentence",
+    "properties": {}
+  },
+  {
+    "func": "randSequence",
+    "name": "sequence",
+    "properties": {
+      "size": "number",
+      "chars": "string"
+    }
+  },
+  {
+    "func": "randSequence",
+    "name": "sequence",
+    "properties": {
+      "size": "number",
+      "charType": [
+        "numeric",
+        "alpha",
+        "alphaNumeric",
+        "special"
+      ]
+    }
+  },
+  {
+    "func": "randShape",
+    "name": "shape",
+    "properties": {}
+  },
+  {
+    "func": "randSinger",
+    "name": "singer",
+    "properties": {}
+  },
+  {
+    "func": "randSkill",
+    "name": "skill",
+    "properties": {}
+  },
+  {
+    "func": "randSlug",
+    "name": "slug",
+    "properties": {}
+  },
+  {
+    "func": "randSnake",
+    "name": "snake",
+    "properties": {}
+  },
+  {
+    "func": "randSocial",
+    "name": "social",
+    "properties": {}
+  },
+  {
+    "func": "randSong",
+    "name": "song",
+    "properties": {}
+  },
+  {
+    "func": "randSoonDate",
+    "name": "soon_date",
+    "properties": {
+      "days": "number"
+    }
+  },
+  {
+    "func": "randSportsTeam",
+    "name": "sports_team",
+    "properties": {}
+  },
+  {
+    "func": "randSports",
+    "name": "sports",
+    "properties": {
+      "category": [
+        "olympic",
+        "winterOlympic",
+        "outdoor"
+      ]
+    }
+  },
+  {
+    "func": "randStateAbbr",
+    "name": "state_abbr",
+    "properties": {}
+  },
+  {
+    "func": "randState",
+    "name": "state",
+    "properties": {}
+  },
+  {
+    "func": "randStatus",
+    "name": "status",
+    "properties": {
+      "type": [
+        "Project",
+        "User Story",
+        "Task"
+      ]
+    }
+  },
+  {
+    "func": "randStreetAddress",
+    "name": "street_address",
+    "properties": {}
+  },
+  {
+    "func": "randStreetName",
+    "name": "street_name",
+    "properties": {}
+  },
+  {
+    "func": "randSubscriptionPlan",
+    "name": "subscription_plan",
+    "properties": {}
+  },
+  {
+    "func": "randSuperheroName",
+    "name": "superhero_name",
+    "properties": {
+      "company": [
+        "Marvel",
+        "DC"
+      ]
+    }
+  },
+  {
+    "func": "randSuperhero",
+    "name": "superhero",
+    "properties": {
+      "company": [
+        "Marvel",
+        "DC"
+      ]
+    }
+  },
+  {
+    "func": "randSvg",
+    "name": "svg",
+    "properties": {}
+  },
+  {
+    "func": "randSwift",
+    "name": "swift",
+    "properties": {
+      "bankCode": "string",
+      "countryCode": "string",
+      "locationCode": "string",
+      "branchCode": "string",
+      "fillBranchCode": "boolean"
+    }
+  },
+  {
+    "func": "randTextRange",
+    "name": "text_range",
+    "properties": {
+      "min": "number",
+      "max": "number"
+    }
+  },
+  {
+    "func": "randText",
+    "name": "text",
+    "properties": {
+      "charCount": "number"
+    }
+  },
+  {
+    "func": "randTimeZone",
+    "name": "time_zone",
+    "properties": {}
+  },
+  {
+    "func": "randTodo",
+    "name": "todo",
+    "properties": {}
+  },
+  {
+    "func": "randTransactionType",
+    "name": "transaction_type",
+    "properties": {}
+  },
+  {
+    "func": "randUrl",
+    "name": "url",
+    "properties": {}
+  },
+  {
+    "func": "randUserAgent",
+    "name": "user_agent",
+    "properties": {}
+  },
+  {
+    "func": "randUserName",
+    "name": "user_name",
+    "properties": {
+      "firstName": "string",
+      "lastName": "string"
+    }
+  },
+  {
+    "func": "randUser",
+    "name": "user",
+    "properties": {}
+  },
+  {
+    "func": "randUuid",
+    "name": "uuid",
+    "properties": {}
+  },
+  {
+    "func": "randVehicleFuel",
+    "name": "vehicle_fuel",
+    "properties": {}
+  },
+  {
+    "func": "randVehicleManufacturer",
+    "name": "vehicle_manufacturer",
+    "properties": {}
+  },
+  {
+    "func": "randVehicleModel",
+    "name": "vehicle_model",
+    "properties": {}
+  },
+  {
+    "func": "randVehicleType",
+    "name": "vehicle_type",
+    "properties": {}
+  },
+  {
+    "func": "randVehicle",
+    "name": "vehicle",
+    "properties": {}
+  },
+  {
+    "func": "randVerb",
+    "name": "verb",
+    "properties": {}
+  },
+  {
+    "func": "randWeekday",
+    "name": "weekday",
+    "properties": {}
+  },
+  {
+    "func": "randWord",
+    "name": "word",
+    "properties": {
+      "capitalize": "boolean"
+    }
+  },
+  {
+    "func": "randZipCode",
+    "name": "zip_code",
+    "properties": {}
+  }
+]

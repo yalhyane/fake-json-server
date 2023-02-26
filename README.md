@@ -46,8 +46,11 @@ Faker.js - A library for generating fake data
 
 ## Installation using docker-composer
 1. Clone the repository
+```bash
+cp .env.docker .env
+```
 
-2. Start docker-compose
+3. Start docker-compose
 ```bash
  docker-compose up -d --build
 ```

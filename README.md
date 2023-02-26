@@ -63,7 +63,7 @@ cp .env.docker .env
 ## Examples of Usage:
 ### List of available types (falso types):
 ```bash
-curl --location --request GET 'http://localhost:3004/types' 
+curl --location --request GET 'http://localhost:3000/types' 
 ```
 Response: 
 ```json5
@@ -89,7 +89,7 @@ Response:
 ```
 ### Generate a user
 ```bash
-curl --request GET 'http://localhost:3004/g/user'
+curl --request GET 'http://localhost:3000/g/user'
 ```
 Response: 
 ```json
@@ -141,7 +141,7 @@ Response:
 
 ### Generate a type with properties
 ```bash
-curl --request GET 'http://localhost:3004/g/credit_card_number|brand:Visa?size=10'
+curl --request GET 'http://localhost:3000/g/credit_card_number|brand:Visa?size=10'
 ```
 Response:
 ```json

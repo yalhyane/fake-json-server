@@ -197,7 +197,7 @@ Example:
     }
 }
 ```
-### Save custom type
+### Create custom type
 
 To create custom type you need to create an account first and login then use the access_token to create custom types
 - use `POST auth/registration` to register 

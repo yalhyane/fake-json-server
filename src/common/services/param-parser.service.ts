@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { SchemeType } from '../../generator/dto/generate-scheme-body.dto';
-import { InvalidTypeException } from '../../types/exceptions/invalid-type.exception';
+
 @Injectable()
 export class ParamParserService {
   parse(param: string): SchemeType {

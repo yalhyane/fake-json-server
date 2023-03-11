@@ -25,16 +25,17 @@ import {
 import { SwaggerTags } from '../common/utils/swagger.utils';
 import { Protected } from '../auth/decorators/protected.decorator';
 import { AuthUser } from '../auth/decorators/user.decorator';
-import { ValidationError } from 'class-validator';
-import { plainToClass } from 'class-transformer';
 import { AllowGuest } from '../auth/decorators/allow-guest.decorator';
 import { UpdateCustomTypeDto } from './dto/update-custom-type.dto';
-import { Model } from 'mongoose';
+import { ParamParserService } from '../common/services/param-parser.service';
 
 @ApiTags(SwaggerTags.Types)
 @Controller('types')
 export class TypesController {
-  constructor(private typesService: TypesService) {}
+  constructor(
+    private typesService: TypesService,
+    private paramParserService: ParamParserService,
+  ) {}
 
   // get type mapping
   @Protected()
@@ -113,6 +114,9 @@ export class TypesController {
     @Body() customType: CreateCustomTypeDto,
     @AuthUser() user,
   ): Promise<CustomType | any> {
+    customType.mapping = this.paramParserService.parseSchema(
+      customType.mapping,
+    );
     await this.typesService.validateScheme(customType.mapping, user);
 
     let type = await this.typesService.getCustomType(user, {

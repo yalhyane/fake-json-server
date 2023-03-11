@@ -8,6 +8,8 @@ This is a web application built using NestJS framework for generating fake data 
 
  ✅&nbsp;Option to select the number of data items to generate.
 
+ ✅&nbsp;Option to create and save custom types with custom properties.
+
  ✅&nbsp;Easy-to-use and intuitive Rest APIs.
 
 ## Getting Started
@@ -18,6 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 - NestJS
 - MongoDB
 
+### Features
 ### Installation on local machine
 
 1. Clone the repository:
@@ -158,6 +161,59 @@ Response:
     "4266 2732 9494 1817"
 ]
 ```
+
+### Generate custom type with properties
+```shell
+curl -X POST http://localhost:3000/g
+   -H "Content-Type: application/json"
+   -d '{"firstname":{"type":"first_name","properties":{"withAccents":true}},"lastname":"last_name|withAccents:yes","Id":"number|min:11|max:12","phones":{"type":"phone_number","properties":{"countryCode":"MA"},"isArray":true,"size":2}}'
+```
+The `POST /g` endpoint accepts json body of a type with custom fields to generate:
+Example:
+```json5
+{
+  // long format
+    "firstname": {
+        "type": "first_name",
+        "properties": {
+            "withAccents": true
+        }
+    },
+  
+    // show format for {"type": "last_name", "properties": {"withAccents": true}}
+    "lastname":"last_name|withAccents:yes",
+    "Id": "number|min:11|max:12",
+  
+    // this can also be written in short format
+    // phone_number|isArray|size:2|countryCode:MA
+    "phones": {
+        "type": "phone_number",
+        "properties": {
+            "countryCode": "MA"
+        },
+        "isArray": true,
+        "size": 2
+
+    }
+}
+```
+### Save custom type
+
+To create custom type you need to create an account first and login then use the access_token to create custom types
+- use `POST auth/registration` to register 
+- use `POST auth/login` to get an access_token
+- use the `POST /types` endpoint to save the custom type as follows:
+```shell
+curl -X POST http://localhost:3000/g
+   -H "Content-Type: application/json"
+   -d '{"name": "person", "mapping": {"name": "full_name", "email": "email", "age": "number|min:10|max:100", "address": "full_address", "phones":  "phone_number|isArray|size:2|countryCode:MA"}}'
+```
+Then use can generate your custom type just like the builtin types
+```shell
+curl --request GET 'http://localhost:3000/g/person?size=10'
+```
+
+Check OpenAPI documentation at `http://localhost:3000/swagger` for more options.
 
 
 ## Contributing

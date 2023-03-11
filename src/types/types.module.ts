@@ -11,6 +11,7 @@ import { CommonModule } from '../common/common.module';
     MongooseModule.forFeature([
       { name: CustomType.name, schema: CustomTypeSchema },
     ]),
+    CommonModule,
   ],
   controllers: [TypesController],
   providers: [TypesService, UniqueTypeValidator],

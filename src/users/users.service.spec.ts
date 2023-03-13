@@ -3,6 +3,7 @@ import { UsersService } from './users.service';
 import { getModelToken } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User } from './schemas/user.schema';
+import { ConfigService } from '@nestjs/config';
 
 export const userServiceProviders = [
   {
@@ -10,6 +11,7 @@ export const userServiceProviders = [
     useValue: Model,
   },
   UsersService,
+  ConfigService,
 ];
 
 describe('UsersService', () => {

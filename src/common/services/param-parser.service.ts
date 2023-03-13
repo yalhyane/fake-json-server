@@ -40,7 +40,7 @@ export class ParamParserService {
       const type = schema[name];
       if (typeof type === 'string') {
         schema[name] = this.parse(type);
-      } else {
+      } else if (!('type' in type)) {
         schema[name] = this.parseSchema(type);
       }
     }

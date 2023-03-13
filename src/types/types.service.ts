@@ -133,7 +133,7 @@ export class TypesService {
     }
 
     if (!user) {
-      throw new InvalidTypeException(type);
+      throw new InvalidTypeException(JSON.stringify(type));
     }
 
     const customType = await this.getCustomTypeByName(user, type);

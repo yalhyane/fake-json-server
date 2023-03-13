@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { GeneratorService } from './generator.service';
 import { getModelToken } from '@nestjs/mongoose';
-import { User } from '../users/schemas/user.schema';
 import { Model } from 'mongoose';
 import { TypesService } from '../types/types.service';
 import { CustomType } from '../types/schemas/custom-type.schema';
+import { ParamParserService } from '../common/services/param-parser.service';
 
 export const generatorServiceProviders = [
   {
@@ -13,6 +13,7 @@ export const generatorServiceProviders = [
   },
   TypesService,
   GeneratorService,
+  ParamParserService,
 ];
 
 describe('GeneratorService', () => {

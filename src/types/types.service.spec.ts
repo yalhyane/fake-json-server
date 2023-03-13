@@ -4,6 +4,7 @@ import { getModelToken } from '@nestjs/mongoose';
 import { User } from '../users/schemas/user.schema';
 import { Model } from 'mongoose';
 import { CustomType } from './schemas/custom-type.schema';
+import { ParamParserService } from '../common/services/param-parser.service';
 
 export const typesServiceProviders = [
   {
@@ -11,6 +12,7 @@ export const typesServiceProviders = [
     useValue: Model,
   },
   TypesService,
+  ParamParserService,
 ];
 
 describe('TypesService', () => {

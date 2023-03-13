@@ -152,6 +152,7 @@ export class TypesService {
   }
 
   async validateScheme(scheme: GenerateSchemeBodyDto, user) {
+    console.log(`Validate: `, scheme);
     for (const name in scheme) {
       const type = scheme[name];
 

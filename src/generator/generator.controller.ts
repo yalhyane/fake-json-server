@@ -65,7 +65,7 @@ export class GeneratorController {
     const r = await this.generatorService.generateType(
       type.type,
       type.properties,
-      type.isArray ? type.size : ( query.size || 0 ),
+      type.isArray ? type.size : query.size || 0,
       user,
     );
 
@@ -87,9 +87,17 @@ export class GeneratorController {
     @Body() scheme: any,
     @AuthUser() user: User,
   ): Promise<any> {
-    scheme = this.paramParserService.parseSchema(scheme);
-    await this.typesService.validateScheme(scheme, user);
-    const r = await this.generatorService.generateScheme(scheme, user);
-    return Promise.resolve(r);
+    try {
+      scheme = this.paramParserService.parseSchema(scheme);
+      console.log(`Parsed schema: `, scheme);
+      await this.typesService.validateScheme(scheme, user);
+      console.log(`Schema is valid`);
+
+      const r = await this.generatorService.generateScheme(scheme, user);
+      return Promise.resolve(r);
+    } catch (e) {
+      console.log(`Error: `, e);
+      throw e;
+    }
   }
 }

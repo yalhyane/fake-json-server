@@ -148,6 +148,9 @@ export class TypesController {
     @Body() customType: UpdateCustomTypeDto,
     @AuthUser() user,
   ): Promise<CustomType | any> {
+    customType.mapping = this.paramParserService.parseSchema(
+      customType.mapping,
+    );
     let type = await this.typesService.getCustomType(user, {
       name: customType.name,
     });

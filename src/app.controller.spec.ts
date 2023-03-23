@@ -15,8 +15,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello from falso-server"', () => {
-      expect(appController.getHello()).toBe('Hello from falso-server');
+    it('should return "Hello from falso-serverc"', () => {
+      expect(appController.getHello()).toBe('Hello from falso-serverc');
     });
   });
 });

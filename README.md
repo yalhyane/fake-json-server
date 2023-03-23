@@ -201,19 +201,31 @@ Example:
 
 To create custom type you need to create an account first and login then use the access_token to create custom types
 - use `POST auth/registration` to register 
+```shell
+curl -X POST http://localhost:3000/auth/registration \
+   -H "Content-Type: application/json" \
+   -d '{"fullname": "Ya", "email": "yalhyane@gmail.com", "password": "1234", "confirmPassword": "1234"}'
+```
 - use `POST auth/login` to get an access_token
+```shell
+curl -X POST http://localhost:3000/auth/login \
+   -H "Content-Type: application/json" \
+   -d '{"email": "yalhyane@gmail.com", "password": "1234"}'
+```
 - use the `POST /types` endpoint to save the custom type as follows:
 ```shell
-curl -X POST http://localhost:3000/g
-   -H "Content-Type: application/json"
+curl -X POST http://localhost:3000/types \
+   -H "Content-Type: application/json" \
+   -H "Authorization: Bearer Your-access-token" \
    -d '{"name": "person", "mapping": {"name": "full_name", "email": "email", "age": "number|min:10|max:100", "address": "full_address", "phones":  "phone_number|isArray|size:2|countryCode:MA"}}'
 ```
 Then use can generate your custom type just like the builtin types
 ```shell
-curl --request GET 'http://localhost:3000/g/person?size=10'
+curl --request GET 'http://localhost:3000/g/person?size=10' \
+   -H "Authorization: Bearer Your-access-token"
 ```
 
-Check OpenAPI documentation at `http://localhost:3000/swagger` for more options.
+Check OpenAPI documentation at `http://localhost:3000/openapi` for more options.
 
 
 ## Contributing
